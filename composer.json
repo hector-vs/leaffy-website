@@ -1,0 +1,25 @@
+{
+    "name": "hector-vs/leaffy-website",
+    "description": "WebSite da empresa Leaffy",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hector V. Saldivar",
+            "email": "hectorvieirasaldivar@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "coffeecode/datalayer": "1.1.8",
+        "coffeecode/router": "1.0.*",
+        "cocur/slugify": "4.5.1"
+    }
+}
