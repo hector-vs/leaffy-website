@@ -75,6 +75,7 @@ class Web
     }
 
     public function dicas($data){
+        include("actions/read.php");
         echo '
         <!DOCTYPE html>
         <html lang="pt-br">
@@ -108,42 +109,18 @@ class Web
                 <main id="mainposts">
                     <h1 class="first">Dicas e informações sobre plantas:</h1>
                     <div class="posts">
-                        <a class="apost" href="#">
-                            <div class="postagem">
-                                <h3>Como e quando regar suas plantinhas</h3>
-                                <p>Saiba o que fazer quando sua plantinha precisar de água!</p>
-                            </div>
-                        </a>
-                        <a class="apost" href="#">
-                            <div class="postagem">
-                                <h3>Iluminação ideal para cada tipo de planta</h3>
-                                <p>Cuidado com a quantidade de exposição à luz de sua plantinha!</p>
-                            </div>
-                        </a>
-                        <a class="apost" href="#">
-                            <div class="postagem">
-                                <h3>Como e quando regar suas plantinhas</h3>
-                                <p>Saiba o que fazer quando sua plantinha precisar de água!</p>
-                            </div>
-                        </a>
-                        <a class="apost" href="#">
-                            <div class="postagem">
-                                <h3>Como e quando regar suas plantinhas</h3>
-                                <p>Saiba o que fazer quando sua plantinha precisar de água!</p>
-                            </div>
-                        </a>
-                        <a class="apost" href="#">
-                            <div class="postagem">
-                                <h3>Como e quando regar suas plantinhas</h3>
-                                <p>Saiba o que fazer quando sua plantinha precisar de água!</p>
-                            </div>
-                        </a>
-                        <a class="apost" href="#">
-                            <div class="postagem">
-                                <h3>Iluminação ideal para cada tipo de planta</h3>
-                                <p>Cuidado com a quantidade de exposição à luz de sua plantinha!</p>
-                            </div>
-                        </a>
+                    ';
+                    if(isset($postlist)){
+                        foreach ($postlist as $postItem){
+                            echo '<a class="apost" href="'.URL_BASE.'/dicas/'.$postItem->slug.'">
+                                    <div class="postagem">
+                                        <h3>'.$postItem->post_nome.'</h3>
+                                        <p>'.$postItem->post_desc.'</p>
+                                    </div>
+                                </a>';
+                        } 
+                    }
+                    echo '
                     </div>
                 </main>
             </div>
