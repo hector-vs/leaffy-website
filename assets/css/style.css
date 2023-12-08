@@ -388,6 +388,76 @@ nav.rolagem {
     }
 }
 
+/*POST*/
+
+#header-post{
+    background: none;
+    background-color: #c7beb3;
+}
+
+#bodypost {
+    background: url(../img/fundoplanta.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+#display-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#display-header-post{
+    color: var(--black);
+    margin: 100px 0 15px 0;
+    text-align: center;
+    font-size: 2.8em;
+}
+
+#categoria {
+    margin: 20px 10px 10px 10px;
+    padding: 2px;
+    color: var(--verde2);
+    border: 2.5px solid var(--verde2);
+    border-radius: 12px;
+}
+
+#main-post {
+    background-color: var(--white);
+    min-width: 300px;
+    max-width: 900px;
+    min-height: 50vh;
+    padding: 40px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#main-post p {
+    text-indent: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#main-post img {
+    max-width: 450px;
+    margin: 0 auto 15px auto;
+}
+
+@media (max-width: 900px){
+    #main-post {
+        padding: 25px;
+    }
+
+    #main-post img {
+        width: 70vw;
+    }
+}
+
+/*FIM POST*/
+
 footer {
     width: 100vw;
     height: 70px;

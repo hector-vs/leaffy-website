@@ -135,8 +135,97 @@ class Web
     }
 
     public function post($data){
-        echo '<h1>Aqui terá um post</h1>';
-        var_dump($data);
+        $thisPost = new Post();
+        $postlist = $thisPost->find("slug = :texto", "texto={$data['slug']}")->fetch();
+        echo '
+        <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>'.$postlist->post_nome.'</title>
+            <link rel="stylesheet" href="../assets/css/style.css">
+        </head>
+        <body id="bodypost">
+            <header class="landing-header" id="header-post">
+            <nav id="nav">
+                <abbr title="Leaffy"><img src="../assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="'.URL_BASE.'" class="anav">Home</a></li>
+                    <li><a href="'.URL_BASE.'/dicas" class="anav">Dicas</a></li>
+                    <li><a href="'.URL_BASE.'/dispositivo" class="anav">Dispositivo</a></li>
+                    <li><a href="'.URL_BASE.'/contato" class="anav">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="area-display" id="display-post">
+                <h1 class="display-header" id="display-header-post">'.$postlist->post_nome.'</h1>
+                <p>'.$postlist->post_desc.'</p>
+                <p id="categoria">dicas/informações</p>
+            </div>
+            </header>
+            <div class="backcontent">
+                <main id="main-post">';
+                if($postlist->titulo1 != ""){
+                    echo '<h2>'.$postlist->titulo1.'</h2>';
+                }
+                if($postlist->texto1 != ""){
+                    echo '<p>'.$postlist->texto1.'</p>';
+                }
+                if($postlist->imagem1 != ""){
+                    echo '<img src="'.$postlist->imagem1.'">';
+                }
+                if($postlist->titulo2 != ""){
+                    echo '<h2>'.$postlist->titulo2.'</h2>';
+                }
+                if($postlist->texto2 != ""){
+                    echo '<p>'.$postlist->texto2.'</p>';
+                }
+                if($postlist->imagem2 != ""){
+                    echo '<img src="'.$postlist->imagem2.'">';
+                }
+                if($postlist->titulo3 != ""){
+                    echo '<h2>'.$postlist->titulo3.'</h2>';
+                }
+                if($postlist->texto3 != ""){
+                    echo '<p>'.$postlist->texto3.'</p>';
+                }
+                if($postlist->imagem3 != ""){
+                    echo '<img src="'.$postlist->imagem3.'">';
+                }
+                if($postlist->titulo4 != ""){
+                    echo '<h2>'.$postlist->titulo4.'</h2>';
+                }
+                if($postlist->texto4 != ""){
+                    echo '<p>'.$postlist->texto4.'</p>';
+                }
+                if($postlist->imagem4 != ""){
+                    echo '<img src="'.$postlist->imagem4.'">';
+                }
+                if($postlist->titulo5 != ""){
+                    echo '<h2>'.$postlist->titulo5.'</h2>';
+                }
+                if($postlist->texto5 != ""){
+                    echo '<p>'.$postlist->texto5.'</p>';
+                }
+                if($postlist->imagem5 != ""){
+                    echo '<img src="'.$postlist->imagem5.'">';
+                }
+                echo '
+                </main>
+            </div>
+            <footer>
+                <p>Leaffy &copy;</p>
+            </footer>
+            <script src="../assets/js/mobile-navbar.js"></script>
+            <script src="../assets/js/menu.js"></script>
+        </body>
+        </html>
+        ';
     }
 
     public function dispositivo($data){
