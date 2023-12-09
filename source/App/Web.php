@@ -367,8 +367,45 @@ class Web
     }
 
     public function error($data){
-        echo "<h1>Web Erro!! {$data["errcode"]}</h1>";
-        var_dump($data);
+        echo '
+        <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Página não encontrada!</title>
+            <link rel="stylesheet" href="../assets/css/style.css">
+        </head>
+        <body>
+            <header>
+            <nav id="nav">
+                <abbr title="Leaffy"><img src="../assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="'.URL_BASE.'" class="anav">Home</a></li>
+                    <li><a href="'.URL_BASE.'/dicas" class="anav">Dicas</a></li>
+                    <li><a href="'.URL_BASE.'/dispositivo" class="anav">Dispositivo</a></li>
+                    <li><a href="'.URL_BASE.'/contato" class="anav">Contato</a></li>
+                </ul>
+            </nav>
+            </header>
+            <main id="erromain">
+                <h1><span class="destaque">Oops, parece que essa página não existe!</span></h1>
+                <p>Não foi encontrada nenhuma página com este nome!</p>
+                <p>ERRO '.$data["errcode"].'</p>
+            </main>
+            <footer>
+                <p>Leaffy &copy;</p>
+            </footer>
+            <script src="../assets/js/mobile-navbar.js"></script>
+            <script src="../assets/js/menu.js"></script>
+        </body>
+        </html>
+        ';
     }
 
 }

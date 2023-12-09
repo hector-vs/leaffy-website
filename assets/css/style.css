@@ -589,3 +589,21 @@ footer p{
         width: 250px;
     }
 }
+
+#erromain{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    text-align: center;
+    background: url(../img/backplanta.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+#erromain p{
+    color: var(--white);
+    margin: 10px;
+}
