@@ -102,11 +102,10 @@ abbr{
 }
 
 .inlinea {
-    background-color: #48734b76;
-    text-decoration: none;
-    color: var(--black);
+    background-color: #48734b24;
+    text-decoration: underline;
+    color: var(--verde3);
     border-radius: 5px;
-    padding: 2px;
     transition: .2s;
 }
 
@@ -473,8 +472,7 @@ footer p{
 
 .bloco {
     background-color: var(--white);
-    min-height: 350px;
-    height: auto;
+    min-height: 400px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -532,7 +530,7 @@ footer p{
 }
 
 #destaque-bloco {
-    min-height: 200px;
+    min-height: 300px;
     background-color: var(--verde3);
     background: url(../img/backplanta2.jpg) no-repeat center bottom;
     background-size: cover;
@@ -571,7 +569,23 @@ footer p{
         width: 280px;
     }
 
-    .img img {
-        height: 280px;
+    .bloco {
+        min-height: 600px;
+    }
+
+    #destaque-bloco {
+        min-height: 620px;
+    }
+
+    .center {
+        margin-top: -65px;
+    }
+
+    #logoblack {
+        display: none;
+    }
+
+    .button {
+        width: 250px;
     }
 }

@@ -44,7 +44,7 @@ class Web
                             <p>A Leaffy&copy; é uma empresa criada por uma equipe de programadores e analistas, e seu principal objetivo é promover a <span class="destaque">conscientização ambiental</span> através de um <a href="'.URL_BASE.'/dispositivo" class="inlinea">dispositivo de auxílio de plantio</a>!</p>
                         </div>
                         <div class="img">
-                            <abbr title="Logo Leaffy"><img style="width: 330px; height: 50px;" src="assets/img/logo.png" alt="Placa ESP32"></abbr>
+                            <abbr title="Logo Leaffy"><img id="logoblack" style="width: 330px; height: 50px;" src="assets/img/logo.png" alt="Logotipo"></abbr>
                         </div>
                     </div>
                 </section>
@@ -263,7 +263,7 @@ class Web
                     <div class="conteudo">
                         <div class="texto">
                             <h2>O que é?</h2>
-                            <p class="justify">Nosso produto é um dispositivo feito em Arduino, utilizando a placa Esp32. Sua função é te auxiliar nos cuidados com a sua plantinha!</p>
+                            <p>Nosso produto é um dispositivo feito em Arduino, utilizando a placa Esp32. Sua função é te auxiliar nos cuidados com a sua plantinha!</p>
                         </div>
                         <div class="img">
                             <abbr title="Placa ARDUINO ESP32"><img src="assets/img/esp32.png" alt="Placa ESP32"></abbr>
