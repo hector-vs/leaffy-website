@@ -13,13 +13,13 @@ class Web
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Home</title>
+            <title>Leaffy</title>
             <link rel="stylesheet" href="assets/css/style.css">
         </head>
         <body>
             <header class="landing-header">
                 <nav id="nav">
-                    <abbr title="Leaffy"><img src="assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                    <abbr title="Leaffy"><img src="assets/img/logo-white.webp" class="logo" alt="Logo Leaffy"></abbr>
                     <div class="mobile-menu">
                         <div class="line1"></div>
                         <div class="line2"></div>
@@ -41,10 +41,10 @@ class Web
                     <div class="conteudo">
                         <div class="texto">
                             <h2>Quem somos?</h2>
-                            <p>A Leaffy&copy; é uma empresa criada por uma equipe de programadores e analistas, e seu principal objetivo é promover a <span class="destaque">conscientização ambiental</span> através de um <a href="'.URL_BASE.'/dispositivo" class="inlinea">dispositivo de auxílio de plantio</a>!</p>
+                            <p>A Leaffy&copy; é uma empresa criada por uma equipe de programadores e analistas, e seu principal objetivo é promover a <span class="destaque2">conscientização ambiental</span> através de um <a href="'.URL_BASE.'/dispositivo" class="inlinea">dispositivo de auxílio de plantio</a>!</p>
                         </div>
                         <div class="img">
-                            <abbr title="Logo Leaffy"><img id="logoblack" style="width: 330px; height: 50px;" src="assets/img/logo.png" alt="Logotipo"></abbr>
+                            <abbr title="Logo Leaffy"><img id="logoblack" style="width: 330px; height: 50px;" src="assets/img/logo.webp" alt="Logotipo"></abbr>
                         </div>
                     </div>
                 </section>
@@ -88,7 +88,7 @@ class Web
         <body>
             <header class="landing-header" id="headerposts">
                 <nav id="nav">
-                    <abbr title="Leaffy"><img src="assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                    <abbr title="Leaffy"><img src="assets/img/logo-white.webp" class="logo" alt="Logo Leaffy"></abbr>
                     <div class="mobile-menu">
                         <div class="line1"></div>
                         <div class="line2"></div>
@@ -149,7 +149,7 @@ class Web
         <body id="bodypost">
             <header class="landing-header" id="header-post">
             <nav id="nav">
-                <abbr title="Leaffy"><img src="../assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                <abbr title="Leaffy"><img src="../assets/img/logo-white.webp" class="logo" alt="Logo Leaffy"></abbr>
                 <div class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -241,7 +241,7 @@ class Web
         <body>
             <header class="landing-header">
             <nav id="nav">
-                <abbr title="Leaffy"><img src="assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                <abbr title="Leaffy"><img src="assets/img/logo-white.webp" class="logo" alt="Logo Leaffy"></abbr>
                 <div class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -266,14 +266,14 @@ class Web
                             <p>Nosso produto é um dispositivo feito em Arduino, utilizando a placa Esp32. Sua função é te auxiliar nos cuidados com a sua plantinha!</p>
                         </div>
                         <div class="img">
-                            <abbr title="Placa ARDUINO ESP32"><img src="assets/img/esp32.png" alt="Placa ESP32"></abbr>
+                            <abbr title="Placa ARDUINO ESP32"><img src="assets/img/esp32.webp" alt="Placa ESP32"></abbr>
                         </div>
                     </div>
                 </section>
                 <section class="bloco" id="bloco2">
                     <div class="conteudo">
                         <div class="img">
-                            <abbr title="Ícone umidade/temperatura"><img src="assets/img/icon.png" alt="Placa ESP32"></abbr>
+                            <abbr title="Ícone umidade/temperatura"><img src="assets/img/icon.webp" alt="Placa ESP32"></abbr>
                         </div>
                         <div class="texto">
                             <h2><span class="destaque">Como funciona?</span></h2>
@@ -292,7 +292,7 @@ class Web
                 <section class="bloco">
                     <div class="conteudo" id="conteudobutton">
                         <div class="texto">
-                            <h2 class="center">Adquira seu <span class="destaque">Dispositivo Leaffy</span> e faça do mundo um lugar melhor!</h2>
+                            <h2 class="center">Adquira seu <span class="destaque2">Dispositivo Leaffy</span> e faça do mundo um lugar melhor!</h2>
                         </div>
                         <a class="button" href="#">ADQUIRIR</a>
                     </div>
@@ -321,7 +321,7 @@ class Web
         <body>
             <header class="landing-header" id="headercontato">
             <nav id="nav">
-                <abbr title="Leaffy"><img src="assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                <abbr title="Leaffy"><img src="assets/img/logo-white.webp" class="logo" alt="Logo Leaffy"></abbr>
                 <div class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -379,7 +379,7 @@ class Web
         <body>
             <header>
             <nav id="nav">
-                <abbr title="Leaffy"><img src="../assets/img/logo-white.png" class="logo" alt="Logo Leaffy"></abbr>
+                <abbr title="Leaffy"><img src="../assets/img/logo-white.webp" class="logo" alt="Logo Leaffy"></abbr>
                 <div class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
