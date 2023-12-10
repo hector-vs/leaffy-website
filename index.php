@@ -20,6 +20,21 @@ $router->group(null);
 $router->get("/", "Web:homepage");
 
 /*
+ * Login 
+*/
+$router->group("login");
+$router->get("/", "Web:login");
+
+/*
+ * Admin 
+*/
+$router->group("admin");
+$router->get("/", "Web:admin");
+$router->get("/criar", "Web:criar");
+$router->get("/update/{id}", "Web:update");
+$router->get("/deletar/{id}", "Web:delete");
+
+/*
  * Dicas 
 */
 $router->group("dicas");
@@ -38,12 +53,6 @@ $router->get("/", "Web:dispositivo");
 $router->group("contato");
 $router->get("/", "Web:contato");
 
-/*
- * Delete 
-*/
-$router->group("deletar");
-$router->get("/", "Web:delete");
-$router->get("/{id}", "Web:delete");
 
 
 /*

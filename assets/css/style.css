@@ -455,7 +455,7 @@ nav.rolagem {
     }
 
     #main-post img {
-        width: 90vw;
+        width: 70vw;
     }
 }
 
@@ -568,24 +568,6 @@ footer p{
     font-size: 2.2em;
 }
 
-#erromain{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    flex-direction: column;
-    text-align: center;
-    background: url(../img/backplanta.avif) no-repeat center bottom;
-    background-size: cover;
-}
-
-#erromain p{
-    color: var(--white);
-    margin: 10px;
-}
-
 @media (max-width: 900px){
     .button {
         width: 280px;
@@ -611,3 +593,57 @@ footer p{
         width: 250px;
     }
 }
+
+#erromain{
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    text-align: center;
+    background: url(../img/backplanta.avif) no-repeat center bottom;
+    background-size: cover;
+}
+
+#erromain p{
+    color: var(--white);
+    margin: 10px;
+}
+
+#container {
+    overflow-x: auto;
+}
+
+table{
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    max-width: 900px;
+    min-width: 300px;
+    background-color: var(--verde3);
+    font-family: var(--font);
+    color: var(--white);
+    margin: 20px;
+ }
+ 
+ table tr {
+    padding: 5px;
+ }
+ 
+ table tr th {
+    padding: 5px;
+    border: 2px solid var(--black);
+    color: var(--verde1);
+ } 
+ 
+ table tr td {
+    border: 2px solid var(--black);
+    padding: 15px;
+    color: var(--cor1);
+ }
+
+ table tr td a {
+    color: rgb(143, 143, 255);
+ }
