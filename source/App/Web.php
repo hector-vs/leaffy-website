@@ -360,7 +360,7 @@ class Web
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Posts</title>
+            <title>Contato</title>
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
         </head>
@@ -381,13 +381,13 @@ class Web
                 </ul>
             </nav>
                 <main id="maincontato">
-                    <form id="formcontato">
+                    <form id="formcontato" action="https://formsubmit.co/f5f0e03e8e19fb56c308bdeca6312de5" method="POST">
                         <label for="email">Seu e-mail:</label>
                         <input type="email" name="email" id="email" value="@gmail.com" required>
                         <label for="assunto">Assunto:</label>
-                        <input type="text" name="assunto" id="assunto" required>
+                        <input type="text" name="_subject" id="assunto" required>
                         <label for="texto">Texto:</label>
-                        <textarea name="texto" id="texto" cols="45" rows="10" required></textarea>
+                        <textarea name="name" id="texto" cols="45" rows="10" required></textarea>
                         <input type="submit" value="Enviar">
                     </form>
                 </main>

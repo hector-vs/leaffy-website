@@ -435,7 +435,10 @@ nav.rolagem {
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+}
+
+#main-post h2 {
+    margin-bottom: 10px;
 }
 
 #main-post p {
