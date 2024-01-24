@@ -657,8 +657,8 @@ class Web
             </header>
             <main id="erromain">
                 <form id="formcontato" method="post" action="../../actions/update.php">
-                    <label for="id">ID (não mude este campo!):</label>
-                    <input type="text" name="id" id="id" required value="'.$postlist->id.'">
+                    <label for="id" style="display: none;">ID (não mude este campo!):</label>
+                    <input type="text" name="id" id="id" required value="'.$postlist->id.'" style="display: none;">
 
                     <label for="uptitulo">Título:</label>
                     <input type="text" name="uptitulo" id="uptitulo" required value="'.$postlist->post_nome.'">

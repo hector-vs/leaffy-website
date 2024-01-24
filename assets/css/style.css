@@ -396,6 +396,7 @@ nav.rolagem {
 #header-post{
     background: none;
     background-color: #c7beb3;
+    height: auto;
 }
 
 #bodypost {
@@ -415,7 +416,8 @@ nav.rolagem {
     color: var(--black);
     margin: 100px 0 15px 0;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 2.4em;
+    max-width: 900px;
 }
 
 #categoria {
